@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background: url('WhatsApp Image 2025-10-08 at 23.24.41_543f5cd2.jpg') center center / cover no-repeat fixed;
+    color: white;
+}
+
+.app-title {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    background: rgba(42, 55, 80, 0.32);
+    max-width: 730px;
+    margin: 24px auto 0 auto;
+    border-radius: 18px;
+    padding: 25px 26px 32px 26px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.35);
+}
+
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.big-temp { font-size: 60px; font-weight: 600; }
+.icon-big img { width: 58px; margin-left: 9px; vertical-align: middle; }
+.desc { font-size: 20px; margin-top: 4px; display: block; }
+.minmax { font-size: 13px; margin-top: 2px; }
+.location-row { color: #e5e8ef; font-size: 17px; margin: 14px 0 20px 0; }
+#city-input {
+    padding: 8px 14px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-right: 7px;
+}
+#search-btn {
+    padding: 8px 17px;
+    background: #384463;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#search-btn:hover { background: #527bbb; }
+.unit-toggle {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: #fff;
+}
+.unit-toggle button {
+    padding: 6px 15px;
+    background: none;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.unit-toggle button.active,
+.unit-toggle button:hover {
+    background-color: #fff;
+    border-color: #4a90e2;
+    color: #4a90e2;
+}
+#rain-alert-btn {
+    margin: 14px auto 12px auto;
+    display: block;
+    font-size: 18px;
+    padding: 9px 19px;
+    border-radius: 6px;
+    border: none;
+    background: #357ab8;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 7px #0003;
+}
+#rain-alert-btn:hover { background: #235a7d; }
+.weekdays {
+    margin: 19px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.weekday-block {
+    background: rgba(255,255,255,0.13);
+    border-radius: 8px;
+    padding: 10px 13px;
+    margin-right: 6px;
+    text-align: center;
+    width: 90px;
+}
+.weekday-block.selected {
+    box-shadow: 0 0 0 2px #fff5, 0 2px 8px #253b7333;
+    border: 1.5px solid #fff7;
+}
+.day-label { font-size: 15px; font-weight: 600; }
+.temp-label { font-size: 14px; margin-top: 2px; }
+.icon-small img { width: 27px; }
+.line-graph-container {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    margin-top: 16px;
+    overflow-x: auto;
+}
+#tempChart { width: 100%; height: 140px; display: block; }

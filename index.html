@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Weather Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <!-- Centered Top Title -->
+    <h1 class="app-title">Weather Dashboard</h1>
+
+    <div class="container">
+        <div class="weather-header">
+            <div>
+                <span id="current-temp" class="big-temp"></span>
+                <span id="unit">°C</span>
+            </div>
+            <div>
+                <span class="desc" id="weather-desc"></span>
+                <div class="minmax">
+                    <span id="max-temp"></span>
+                    <span id="min-temp"></span>
+                </div>
+            </div>
+            <div class="icon-big">
+                <img id="weather-icon" src="" alt="icon"/>
+            </div>
+        </div>
+        <div class="location-row">
+            <span id="city"></span>,
+            <span id="country"></span>
+            &middot;
+            <span id="local-time"></span>
+        </div>
+        <input id="city-input" type="text" placeholder="Enter city" />
+        <button id="search-btn">Search</button>
+        <div class="unit-toggle">
+            <button id="celsius-btn" class="active">°C</button>
+            <button id="fahrenheit-btn">°F</button>
+        </div>
+        <div class="weekdays" id="weekdays"></div>
+        <button id="rain-alert-btn" style="display:none;">Rain Alert: Min temp below 20°C!</button>
+        <div class="line-graph-container">
+            <canvas id="tempChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
